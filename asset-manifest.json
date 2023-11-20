@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/RECTLESS-CP-4/static/css/main.c837114d.css",
-    "main.js": "/RECTLESS-CP-4/static/js/main.679d940c.js",
+    "main.js": "/RECTLESS-CP-4/static/js/main.c7df00dc.js",
     "index.html": "/RECTLESS-CP-4/index.html",
     "main.c837114d.css.map": "/RECTLESS-CP-4/static/css/main.c837114d.css.map",
-    "main.679d940c.js.map": "/RECTLESS-CP-4/static/js/main.679d940c.js.map"
+    "main.c7df00dc.js.map": "/RECTLESS-CP-4/static/js/main.c7df00dc.js.map"
   },
   "entrypoints": [
     "static/css/main.c837114d.css",
-    "static/js/main.679d940c.js"
+    "static/js/main.c7df00dc.js"
   ]
 }
