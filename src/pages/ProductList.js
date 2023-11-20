@@ -1,30 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import StarRating from "./StarRating";
 
 function ProductList() {
   const [products, setProducts] = useState([]);
-  const navigate = useNavigate();
   useEffect(() => {
     const fetchShop = async () => {
-      try {
-        const response = await fetch(`https://fakestoreapi.com/products/`);
-        const data = await response.json();
-
-        if (Array.isArray(data)) {
-          setProducts(data);
-        } else {
-          console.error("Invalid data format:", data);
-          navigate("*");
-        }
-      } catch (error) {
-        console.error("Error fetching data:", error);
-        navigate("*");
-      }
+      const response = await fetch(`https://fakestoreapi.com/products/`);
+      const data = await response.json();
+      setProducts(data);
     };
-
     fetchShop();
-  }, [navigate]);
+  }, []);
 
   return (
     <div className="product-list-container">
